@@ -44,6 +44,13 @@ input[type=button]:hover {
     cursor: pointer;
 }
 
+#timer {
+    border: 4px solid #fafafa;
+    font-size: 40pt;
+    padding: 10px;
+    margin: 10px;
+}
+
 footer{
     display: flex;
     width: auto;
