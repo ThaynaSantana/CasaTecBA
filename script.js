@@ -33,6 +33,9 @@ function startTimer(duration, display){
                 break;
             case(3):
                 display.textContent = minutes + " minutos";
+                break;
+            case(4):
+                display.textContent = months + " meses"
                 i=0;
                 break;
         }
