@@ -156,6 +156,10 @@ label a {
         width: 50vw;
         padding: 20px 10px 10px 10px;
     }
+
+    .big {
+        font-size: 1.8rem;
+    }
     
     .botao {
         width: 80vw;
