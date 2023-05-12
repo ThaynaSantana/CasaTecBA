@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
+@media screen and (max-width: 470px) and (min-width: 325px) {
+    
+    #logo {
+        width: 50vw;
+        padding: 20px 10px 10px 10px;
+    }
+    
+    input[type=button] {
+        width: 80vw;
+        height: 8vh;
+        font-size: 4vh;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +22,16 @@
 
 body{
     background-image: linear-gradient(#004aad, #020c18);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    margin-top: 50px;
+    gap: 15px;
 }
 
 main{
@@ -21,9 +45,18 @@ main{
 
 #logo{
     width: 300px;
+    background-color: #D74393;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.603);
+    padding: 30px;
+    border-radius: 100rem;
 }
 
-input[type=button] {
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#020c18;
+    text-decoration: none;
     width: 25rem;
     height: 5rem;
     font-size: 32pt;
@@ -34,15 +67,13 @@ input[type=button] {
     box-shadow: -5px 8px #11111176;
 }
 
-input[type=button]:active {
+.botao:hover, .botao:active {
+    cursor: pointer;
     color: #fafafa;
     background-image: radial-gradient(#e72163, #b2397a);
     border: 0;
 }
 
-input[type=button]:hover {
-    cursor: pointer;
-}
 
 #timer {
     border: 4px solid #e63fb4;
@@ -59,8 +90,8 @@ footer{
     flex-wrap: nowrap;
     background-color: #041a36;
     color: #ffffff;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 20px 100px;
 }
 
 footer h2 {
@@ -82,16 +113,44 @@ footer p {
     padding: 5px;
 }
 
-@media screen and (max-width: 470px) and (min-width: 325px) {
-    
-    #logo {
-        width: 50vw;
-        padding: 20px 10px 10px 10px;
-    }
-    
-    input[type=button] {
-        width: 80vw;
-        height: 8vh;
-        font-size: 4vh;
-    }
+#atendimento {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #e72163;
+    text-decoration: underline;
+}
+
+.icons {
+    width: 2rem;
+    border-radius: 10px;
+}
+
+.blue {
+    color: #5bffd6;
+}
+
+.rose {
+    color:#e72163;
+}
+
+.big {
+    font-size: 2rem;
+}
+
+.descricao {
+    text-align: justify;
+    padding: 20px 100px;
 }
